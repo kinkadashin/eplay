@@ -20,6 +20,7 @@ const Banner = () => {
   if (!game) {
     return <h3>Carregando...</h3>
   }
+
   return (
     <Imagem style={{ backgroundImage: `url(${game?.media.cover})` }}>
       <div className="container">
@@ -33,7 +34,7 @@ const Banner = () => {
         </div>
         <Button
           type="link"
-          to="/produto"
+          to={`/product/${game.id}`}
           title="Clique aqui para aproveitar esta oferta"
         >
           Aproveitar
