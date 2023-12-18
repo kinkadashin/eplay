@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breakpoints, cores } from '../../styles'
+import { colors, breakpoints } from '../../styles'
 import { TagContainer } from '../Tag/styles'
 
 export const Banner = styled.div`
@@ -7,9 +7,10 @@ export const Banner = styled.div`
   display: block;
   height: 480px;
   width: 100%;
+
   background-repeat: no-repeat;
-  background-size: 100%;
   background-position: center;
+  background-size: 100%;
 
   padding-top: 16px;
 
@@ -24,8 +25,8 @@ export const Banner = styled.div`
     height: 100%;
     top: 0;
     left: 0;
-    opacity: 0.56;
     content: '';
+    opacity: 0.56;
   }
 
   ${TagContainer} {
@@ -44,7 +45,7 @@ export const Banner = styled.div`
 
 export const Infos = styled.div`
   padding: 16px;
-  background-color: ${cores.preta};
+  background-color: ${colors.black};
   max-width: 290px;
   font-weight: bold;
 
